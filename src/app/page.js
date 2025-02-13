@@ -1,101 +1,58 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="w-[55vw] mx-auto">
+      <header class="w-full h-20 flex items-center justify-between">
+        <h1 class="text-3xl font-semibold text-cyan-500">
+          Moodora
+        </h1>
+        <div className="flex items-center text-xs">
+          <ul className="flex items-center gap-x-8">
+            <li>
+              <Link href={"#"}>
+                Beranda
+              </Link>
+            </li>
+            <li>
+              <Link href={"#"}>
+                Hubungi Kami
+              </Link>
+            </li>
+          </ul>
+          <div className="w-[1px] h-4 bg-black mr-2 ml-6"></div>
+          <div className="">
+            <Link href={'#'}>
+              <button className="w-16 h-8 hover:text-white hover:bg-cyan-600 duration-150 rounded-md mr-2">
+                Masuk
+              </button>
+            </Link>
+            <Link href={'#'}>
+              <button className="w-16 h-8 text-white bg-cyan-600 duration-150 rounded-md">
+                Daftar
+              </button>
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </header>
+      <div className="w-full h-[20rem] mt-5 overflow-hidden rounded-xl relative">
+        <div className="z-[2] w-full h-full bg-black bg-opacity-10 absolute top-0 left-0 p-16">
+          <h1 className="text-4xl font-bold text-white">Mood Sehat, Aura Kuat</h1>
+          <p className="text-lg text-neutral-100 mt-5">
+            Catat mood harianmu hanya di sini! Kamu juga bisa membaca artikel kami tentang perasaan dan menemukan wawasan baru untuk membantumu mengontrol mood dengan lebih baik.
+          </p>
+          <div className="mt-5 flex items-center gap-x-2">
+            <button className="bg-yellow-300 w-36 h-10 rounded-sm grid place-content-center text-xs text-slate-700">
+              Baca Artikel
+            </button>
+            <button className="bg-cyan-400 w-40 h-10 rounded-sm grid place-content-center text-xs text-slate-700">
+              Catat Perasaan mu
+            </button>
+          </div>
+        </div>
+        <img src="https://img.pikbest.com/wp/202347/abstract-geometric-shape-pastel-colored-mockup-podium-shaped-background-for-product-display_9767310.jpg!bw700" className="z-[1] absolute -top-32 left-0 w-full"></img>
+      </div>
     </div>
   );
 }
