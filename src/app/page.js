@@ -1,9 +1,10 @@
-import { faAnglesRight, faSmile } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faCutlery, faFaceFrown, faFaceLaughBeam, faFaceMeh, faFaceSadTear, faSadCry, faSmile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import AppLayout from "./layout/AppLayout";
+import { faFaceSadCry } from "@fortawesome/free-regular-svg-icons";
 
 export const metadata = {
   title: 'Beranda - Moodora'
@@ -61,19 +62,19 @@ export default function Home() {
               <h1 className="text-center text-xl font-medium text-slate-200">Bagaimana perasaanmu hari ini?</h1>
               <div className="mt-6 flex justify-center space-x-3 items-center">
                 <button className="bg-[#213cc5] w-14 md:w-16 h-14 md:h-16 rounded-full grid place-content-center">
-                  <FontAwesomeIcon icon={faSmile} className="w-8 text-white"/>
+                  <FontAwesomeIcon icon={faFaceLaughBeam} className="w-10 text-xl text-white" style={{ width: "2rem", height: "2rem" }}/>
                 </button>
                 <button className="bg-[#213cc5] w-14 md:w-16 h-14 md:h-16 rounded-full grid place-content-center">
-                  <FontAwesomeIcon icon={faSmile} className="w-8 text-white"/>
+                  <FontAwesomeIcon icon={faSmile} className="w-10 text-xl text-white" style={{ width: "2rem", height: "2rem" }}/>
                 </button>
                 <button className="bg-[#213cc5] w-14 md:w-16 h-14 md:h-16 rounded-full grid place-content-center">
-                  <FontAwesomeIcon icon={faSmile} className="w-8 text-white"/>
+                  <FontAwesomeIcon icon={faFaceMeh} className="w-10 text-xl text-white" style={{ width: "2rem", height: "2rem" }}/>
                 </button>
                 <button className="bg-[#213cc5] w-14 md:w-16 h-14 md:h-16 rounded-full grid place-content-center">
-                  <FontAwesomeIcon icon={faSmile} className="w-8 text-white"/>
+                  <FontAwesomeIcon icon={faFaceFrown} className="w-10 text-xl text-white" style={{ width: "2rem", height: "2rem" }}/>
                 </button>
                 <button className="bg-[#213cc5] w-14 md:w-16 h-14 md:h-16 rounded-full grid place-content-center">
-                  <FontAwesomeIcon icon={faSmile} className="w-8 text-white"/>
+                  <FontAwesomeIcon icon={faFaceSadTear} className="w-10 text-xl text-white" style={{ width: "2rem", height: "2rem" }}/>
                 </button>
               </div>
 
