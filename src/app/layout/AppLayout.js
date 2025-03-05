@@ -37,7 +37,7 @@ const AppLayout = ({children}) => {
                         </Link>
                         </li>
                         <li>
-                        <Link href={"#"} className="hover:text-pink-500 duration-150">
+                        <Link href={"/jurnal"} className="hover:text-pink-500 duration-150">
                             Jurnal
                         </Link>
                         </li>
@@ -98,7 +98,7 @@ const AppLayout = ({children}) => {
                                 </Link>
                             </li>
                             <li>
-                            <Link href={"#"} className="hover:text-pink-500 duration-150">
+                            <Link href={"/jurnal"} className="hover:text-pink-500 duration-150">
                                 <button className="w-full h-[7vh] border border-[#9eabeb]">    
                                     Jurnal
                                 </button>
