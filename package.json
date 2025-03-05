@@ -17,8 +17,8 @@
     "@toast-ui/editor": "^3.2.2",
     "@toast-ui/react-editor": "^3.2.3",
     "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "tui-editor": "^1.4.10"
   },
   "devDependencies": {
